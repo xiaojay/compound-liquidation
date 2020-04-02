@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="xiaojay"/>
+    <meta name="version" content="0.0.1"/>
+    <title>Compound 清算监控</title>
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <meta name="description" content="The place to see all compound liquidations. Welcome to the open blockchains.">
+    <meta name="keywords" content="compound cdai cusdc liquidation">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+  
+    <link rel="icon" type="icon" href="/img/favicon.ico"/>
+    <link rel="stylesheet" href="/css/styles.css" media="all"/>
+    <script src="/js/jquery.min.js"></script>
+</head>
+<body>
+<h1>
+    <a href="/"><img alt="compound logo" src="/img/compound-logo.png"/></a>
+    Compound 清算监控
+    <small>(cDAI)</small>
+</h1>
+<div id="languages">
+    <a href="#">ENGLISH</a>
+</div>
+<div id="filter-panel">
+    <span id="no-results">最近几天没有清算</span>
+    <i id="last-update"></i>
+    <div class="links-panel">
+        <a href="#"  class="active" title="cDAI">cDAI</a> |
+        <a href="/cusdc.html"  title="cUSDC">cUSDC</a>
+    </div>
+</div>
+<div id="app">
+<div id='loading'><div class="row"> >> 正在从主网获取数据...</div></div>
+</div>
+<p class="made-by">
+    Made with ❤ by xiaojay@gmail.com
+    <br/><br/>
+    2020
+    <br/><br/>
+    
+    <i>
+        受到 daiauctions.com 启发 <a target="_blank" href="http://daiauctions.com">daiauctions.com</a><br/>
+    </i>
+</p>
+<script src="/js/web3.min.js"></script>
+</body>
+<script>
+   $.getScript("/js/cdai.js")
+</script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.13.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</html>
